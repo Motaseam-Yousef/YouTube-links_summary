@@ -13,7 +13,7 @@ st.markdown("<h2 style='color:blue;'>Enter Your openai API KEY</h2>", unsafe_all
 key= st.text_input('Ex: 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') 
 
 st.markdown("<h1>Enter Your YouTube Link </h1>", unsafe_allow_html=True)
-link = st.text_input('https://www.youtube.com/watch?v=I2wURDqiXdM') 
+link = st.text_input('') 
 
 loader = YoutubeLoader.from_youtube_url(link, add_video_info=True)
 
