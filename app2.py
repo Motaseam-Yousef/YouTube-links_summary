@@ -4,8 +4,8 @@ from langchain.chains.summarize import load_summarize_chain
 import streamlit as st 
 from apikey import apikey 
 
-os.environ['OPENAI_API_KEY'] = apikey
-OPENAI_API_KEY = apikey
+#os.environ['OPENAI_API_KEY'] = apikey
+OPENAI_API_KEY = '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'
 
 st.title('✍️🔗 YouTube Links Summary ✍️')
 link = st.text_input('Plug in your link here') 
