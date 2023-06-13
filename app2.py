@@ -10,9 +10,10 @@ from apikey import apikey
 st.title('✍️🔗 YouTube Links Summary ✍️')
 
 st.title('Enter Your openai API KEY')
+st.markdown('##Enter Your openai API KEY')
 key= st.text_input('Ex: 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') 
 
-link = st.markdown('## Plug in your link here') 
+link = st.text_input('Plug in your link here') 
 
 loader = YoutubeLoader.from_youtube_url(link, add_video_info=True)
 
