@@ -8,6 +8,10 @@ from apikey import apikey
 OPENAI_API_KEY = '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'
 
 st.title('✍️🔗 YouTube Links Summary ✍️')
+
+st.h2('Enter Your openai API KEY')
+key= st.text_input('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') 
+
 link = st.text_input('Plug in your link here') 
 
 loader = YoutubeLoader.from_youtube_url(link, add_video_info=True)
@@ -19,7 +23,7 @@ result = loader.load()
 # print ("")
 # print (result)
 
-llm = OpenAI(temperature=0, openai_api_key=OPENAI_API_KEY)
+llm = OpenAI(temperature=0, openai_api_key=key)
 
 chain = load_summarize_chain(llm, chain_type="stuff", verbose=False)
 #chain.run(result)
