@@ -2,6 +2,7 @@ from langchain.document_loaders import YoutubeLoader
 from langchain.llms import OpenAI
 from langchain.chains.summarize import load_summarize_chain
 import streamlit as st 
+import time
 #from apikey import apikey 
 #os.environ['OPENAI_API_KEY'] = apikey
 #OPENAI_API_KEY = 'Your key'
@@ -35,8 +36,7 @@ if link:
 
     st.write(res)
     with st.spinner('Loading...'):
-    # Simulate long running computation
-  #  time.sleep(2)
-    st.success('Done!')
+        time.sleep(2)
+        st.success('Done!')
 
 
