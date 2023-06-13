@@ -5,7 +5,7 @@ import streamlit as st
 from apikey import apikey 
 
 #os.environ['OPENAI_API_KEY'] = apikey
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 
 st.title('✍️🔗 YouTube Links Summary ✍️')
 link = st.text_input('Plug in your link here') 
