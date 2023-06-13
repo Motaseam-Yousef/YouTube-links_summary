@@ -35,5 +35,9 @@ if link:
     res= chain.run(result)
 
     st.write(res)
+    with st.spinner('Loading...'):
+    # Simulate long running computation
+    time.sleep(2)
+    st.success('Done!')
 
 
