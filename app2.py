@@ -5,14 +5,14 @@ import streamlit as st
 from apikey import apikey 
 
 #os.environ['OPENAI_API_KEY'] = apikey
-OPENAI_API_KEY = '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'
+#OPENAI_API_KEY = 'Your key'
 
 st.title('✍️🔗 YouTube Links Summary ✍️')
 
-st.h2('Enter Your openai API KEY')
-key= st.text_input('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') 
+st.title('Enter Your openai API KEY')
+key= st.text_input('Ex: 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') 
 
-link = st.text_input('Plug in your link here') 
+link = st.markdown('## Plug in your link here') 
 
 loader = YoutubeLoader.from_youtube_url(link, add_video_info=True)
 
